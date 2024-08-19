@@ -16,8 +16,8 @@ export const Skills = () => {
   const [disp,setDisp] = useState(false)
   useEffect(()=>{
     window.addEventListener("resize",()=>{
-      let h = document.body.getBoundingClientRect()
-      if(h.width <= 782){
+      let h = document.body.getBoundingClientRect();
+      if(h.width < 782){
         setDisp(true)
       }
       else if(h.width > 782){
