@@ -74,7 +74,7 @@ export const PortFolio = ()=>{
               </Typography>
               <br />
               <div className="d-flex justify-content-center w-75">
-              <Button variant="contained"><a className="text-decoration-none text-white" href="/src/Files/Muthukumar R Resume.pdf">View Resume</a> </Button>  
+              <Button variant="contained"><a className="text-decoration-none text-white" href="https://drive.google.com/file/d/1z7B3bHpuMNOv549UR8kw9Y0fXhbHmjjU/view?usp=sharing">View Resume</a> </Button>  
               </div>
               </div> 
 
