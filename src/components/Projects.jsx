@@ -26,7 +26,7 @@ export const Projects = () => {
 
         <div className='d-flex justify-content-center '>
         <div className='col-md-8 text-center'>
-        <Typography variant="h6" color="white">I have Individually working for some projects.
+        <Typography color="white">I have Individually working for some projects.
             There are, CRM - Customer Relationship Management, Ekart , Mailchimp during My internship.
         </Typography>
         </div>

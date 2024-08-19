@@ -15,18 +15,22 @@ import { DiNodejs } from "react-icons/di";
 export const Skills = () => {
   const [disp,setDisp] = useState(false)
   useEffect(()=>{
-    window.addEventListener("resize",()=>{
       let h = document.body.getBoundingClientRect();
       if(h.width < 782){
         setDisp(true)
+        document.querySelector(".addclass").classList.add("container-fluid")
+        document.querySelector(".addclass").classList.remove("w-75")
       }
-      else if(h.width > 782){
+
+      else{
         setDisp(false)
+        document.querySelector(".addclass").classList.add("w-75")
+        document.querySelector(".addclass").classList.add("container-fluid")
       }
       console.log(h);
       console.log(disp);
       
-    })
+    
   },[])
   return (
     <>
@@ -44,7 +48,7 @@ export const Skills = () => {
               <div className=' d-flex flex-column align-items-center rounded-2 shadow-sm'>
 
                  <div className='d-flex justify-content-center text-white'><Typography>FrontEnd</Typography></div> <br />
-                 <div className={`${disp ? "container-fluid" : "col-md-8"} dis-grid`}>
+                 <div className="dis-grid addclass">
                  <span className="badge border"><FaHtml5 className='h5 bg-warning rounded'/>&nbsp;HTML 5</span>
                  <span className="badge border"><SiCss3 className='h5 bg-primary rounded' />&nbsp;CSS</span>
                  <span className="badge border"><TbBrandJavascript className='h5 rounded' style={{backgroundColor:'yellow'}}/>&nbsp;Javascript</span>
@@ -62,7 +66,7 @@ export const Skills = () => {
             <div className={`${disp ? "mt-3" : ""} col-md-5 py-5 border d-flex flex-column align-items-center rounded-2 shadow-sm`}>
 
             <div className='d-flex justify-content-center text-white'><Typography>BackEnd</Typography></div>  <br />
-                 <div className={`${disp ? "container-fluid" : "col-md-8"} dis-grid`}>
+                 <div className= "dis-grid width-effect">
                  <span className="badge border"><DiMongodb className='h5 bg-success rounded' />&nbsp;MongoDB</span>
                  <span className="badge border"><DiNodejs className='h5 bg-success p-1 rounded' style={{backgroundColor:'yellow'}}/>&nbsp;Node Js</span>
                  </div>

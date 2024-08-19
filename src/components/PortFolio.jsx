@@ -1,5 +1,5 @@
-import React,{SetStateAction, useEffect, useState} from "react"
-import { Box, Stack, Typography, Toolbar, Button } from "@mui/material"
+import React,{useEffect, useState} from "react"
+import { Typography, Button } from "@mui/material"
 import { Navbar } from "./Navbar"
 import { TypeAnimation } from 'react-type-animation'
 import Muthu from "../imgs/Muthu.jpg"
@@ -10,6 +10,7 @@ export const PortFolio = ()=>{
   const [about,setAbout] = useState(false)
   const [skills,setSkills] = useState(false)
   const [projects,setProjects] = useState(false)
+  const [dispwidth,setDispwidth] = useState(false)
 
   useEffect(()=>{
 
@@ -23,21 +24,27 @@ export const PortFolio = ()=>{
         setProjects(false)
        } 
        let project = document.querySelector(".projects").getBoundingClientRect();
-       console.log(project);
        if(project.y < 45 ){ setProjects(true)
         setSkills(false)
        }
        
-       /* let skills = document.querySelector(".skills").getBoundingClientRect();
-       if(Math.abs(skills.y + 390) <= (skills.height - 56) ){ setSkills(true)}
-       else if(Math.abs(skills.y) > (skills.height)){setSkills(false)}  */
-       
-      console.log(skills)
+})
+
+    window.addEventListener("resize",()=>{
+      let h = document.body.getBoundingClientRect();
+      if(h.width < 782){
+        setDispwidth(true)
+      }
+      else if(h.width > 782){
+        setDispwidth(false)
+      }
       
     })
     
     
   },[])
+
+ 
   
     return (
         <>
@@ -51,14 +58,15 @@ export const PortFolio = ()=>{
 
               <div className="col-md-6 p-2 d-flex flex-column align-items-center justify-content-center">
 
-            <div className="w-75">
+            <div className="width-effect">
               <div>
                <h1 className="text-white ">Hi, I am</h1> 
                <h1 className="text-white ">Muthukumar R.</h1> 
                </div>
 
-          <span>
+          <span >
           <span style={{fontSize:"2em"}} className="text-white">I am </span>
+          <span className="">
           <TypeAnimation className='bg-primary text-white rounded-3' sequence={[
             "MERN stack Developer.",1000
            ]}
@@ -66,15 +74,17 @@ export const PortFolio = ()=>{
            speed={200}
            style={{fontSize:'2em',display:'inline-block'}}
            
-           /></span>    
+           /></span></span>    
         
                     <br /> <br />
-              <Typography className="w-75" sx={{}} variant="h6" color="white">
+              <Typography variant="h6" color="white">
               Motivated and dedicated Mernstack developer with a strong foundation in programming principles. Skilled in Javascript and NodeJs. Passionate about creating efficient and reliable applications. Strong problem solving and teamwork abilities. Eager to contribute to software development projects. 	  
               </Typography>
               <br />
-              <div className="d-flex justify-content-center w-75">
-              <Button variant="contained"><a className="text-decoration-none text-white" href="https://drive.google.com/file/d/1z7B3bHpuMNOv549UR8kw9Y0fXhbHmjjU/view?usp=sharing">View Resume</a> </Button>  
+              <div className="dis-grid">
+              <Button variant="contained"><a className="text-decoration-none text-white" href="https://drive.google.com/file/d/1z7B3bHpuMNOv549UR8kw9Y0fXhbHmjjU/view?usp=sharing">View Resume</a> </Button>
+
+              <Button variant="contained"><a className="text-decoration-none text-white" href="https://drive.google.com/file/d/1PaeTEijqb_Y2nTSgLg47BbNhC9P0hWs4/view?usp=sharing">Internship Certicate</a> </Button>  
               </div>
               </div> 
 
