@@ -58,7 +58,8 @@ export const PortFolio = ()=>{
                </div>
 
           <span>
-          <span style={{fontSize:"2em"}} className="text-white">I am </span><TypeAnimation className='bg-success rounded-3' sequence={[
+          <span style={{fontSize:"2em"}} className="text-white">I am </span>
+          <TypeAnimation className='bg-primary text-white rounded-3' sequence={[
             "MERN stack Developer.",1000
            ]}
            wrapper='span'
@@ -73,7 +74,7 @@ export const PortFolio = ()=>{
               </Typography>
               <br />
               <div className="d-flex justify-content-center w-75">
-              <Button variant="contained">View Resume</Button>  
+              <Button variant="contained"><a className="text-decoration-none text-white" href="/src/Files/Muthukumar R Resume.pdf">View Resume</a> </Button>  
               </div>
               </div> 
 
