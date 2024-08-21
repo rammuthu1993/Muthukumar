@@ -84,7 +84,7 @@ export const PortFolio = ()=>{
               <div className="dis-grid">
               <Button variant="contained"><a className="text-decoration-none text-white" href="https://drive.google.com/file/d/1z7B3bHpuMNOv549UR8kw9Y0fXhbHmjjU/view?usp=sharing">View Resume</a> </Button>
 
-              <Button variant="contained"><a className="text-decoration-none text-white" href="https://drive.google.com/file/d/1PaeTEijqb_Y2nTSgLg47BbNhC9P0hWs4/view?usp=sharing">Internship Certicate</a> </Button>  
+              <Button variant="contained"><a className="text-decoration-none text-white" href="https://drive.google.com/file/d/1EzjNSbQXDEJ_TdQeXL8nqYh-tHfqYADj/view?usp=sharing">Internship Certicate</a> </Button>  
               </div>
               </div> 
 

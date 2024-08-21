@@ -19,13 +19,13 @@ export const Skills = () => {
       if(h.width < 782){
         setDisp(true)
         document.querySelector(".addclass").classList.add("container-fluid")
-        document.querySelector(".addclass").classList.remove("w-75")
+        document.querySelector(".addclass" ).classList.remove("w-75")
       }
 
       else{
         setDisp(false)
         document.querySelector(".addclass").classList.add("w-75")
-        document.querySelector(".addclass").classList.add("container-fluid")
+        document.querySelector(".addclass").classList.remove("container-fluid")
       }
       console.log(h);
       console.log(disp);
@@ -63,7 +63,7 @@ export const Skills = () => {
             </div>
         
 
-            <div className={`${disp ? "mt-3" : ""} col-md-5 py-5 border d-flex flex-column align-items-center rounded-2 shadow-sm`}>
+            <div className="margin-down col-md-5 py-5 border d-flex flex-column align-items-center rounded-2 shadow-sm">
 
             <div className='d-flex justify-content-center text-white'><Typography>BackEnd</Typography></div>  <br />
                  <div className= "dis-grid width-effect">

@@ -34,3 +34,9 @@
         width: 75%;
     }
 }
+@media screen and (max-width:766px){
+     .margin-down{
+        position: relative;
+        top: 13px;
+     }
+}

@@ -34,7 +34,7 @@ export const Projects = () => {
 
      <div className='container border rounded-2 p-3'>
       <Typography color="white">
-      <Typography color='yellow' variant="h6">
+      <Typography className="text-warning" variant="h6">
       Customer Relationship Management: (HTML, CSS, React Js,Redux Toolkit,NodeJs) 
       </Typography>                          
       Developed a Student Attendance Management System. Utilized HTML and CSS for a user-friendly and responsive interface. Implemented NodeJs for backend logic, data processing, and user interactions. Managed the MongoDb database for efficient data storage and retrieval.
