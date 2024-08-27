@@ -56,7 +56,7 @@ export const PortFolio = ()=>{
           
            <div className="row">
 
-              <div className="col-md-6 p-2 d-flex flex-column align-items-center justify-content-center">
+              <div className="col-md-6 p-2 d-flex flex-column align-items-center">
 
             <div className="width-effect">
               <div>
