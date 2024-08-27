@@ -56,7 +56,7 @@ export const PortFolio = ()=>{
           
            <div className="row">
 
-              <div className="col-md-6 p-2 d-flex flex-column align-items-center">
+              <div className="col-md-6 p-2 d-flex flex-column align-items-center justify-content-center">
 
             <div className="width-effect">
               <div>
@@ -81,7 +81,7 @@ export const PortFolio = ()=>{
               Motivated and dedicated Mernstack developer with a strong foundation in programming principles. Skilled in Javascript and NodeJs. Passionate about creating efficient and reliable applications. Strong problem solving and teamwork abilities. Eager to contribute to software development projects. 	  
               </Typography>
               <br />
-              <div className="dis-grid align-items-center">
+              <div className="dis-grid">
               <Button variant="contained"><a className="text-decoration-none text-white" href="https://drive.google.com/file/d/1z7B3bHpuMNOv549UR8kw9Y0fXhbHmjjU/view?usp=sharing">View Resume</a> </Button>
 
               <Button variant="contained"><a className="text-decoration-none text-white" href="https://drive.google.com/file/d/1EzjNSbQXDEJ_TdQeXL8nqYh-tHfqYADj/view?usp=sharing">Internship Certicate</a> </Button>  
