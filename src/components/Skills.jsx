@@ -14,7 +14,7 @@ import { DiNodejs } from "react-icons/di";
 
 export const Skills = () => {
   const [disp,setDisp] = useState(false)
-  useEffect(()=>{
+  /* useEffect(()=>{
       let h = document.body.getBoundingClientRect();
       if(h.width < 782){
         setDisp(true)
@@ -24,14 +24,14 @@ export const Skills = () => {
 
       else{
         setDisp(false)
-        document.querySelector(".addclass").classList.add("w-75")
-        document.querySelector(".addclass").classList.remove("container-fluid")
+        // document.querySelector(".addclass").classList.add("w-75")
+        // document.querySelector(".addclass").classList.remove("container-fluid")
       }
       console.log(h);
       console.log(disp);
       
     
-  },[])
+  },[]) */
   return (
     <>
     <div id="skills" className='container-fluid bg-dark py-5 skills'>
@@ -48,7 +48,7 @@ export const Skills = () => {
               <div className=' d-flex flex-column align-items-center rounded-2 shadow-sm'>
 
                  <div className='d-flex justify-content-center text-white'><Typography>FrontEnd</Typography></div> <br />
-                 <div className="dis-grid addclass">
+                 <div className="dis-grid width-effect">
                  <span className="badge border"><FaHtml5 className='h5 bg-warning rounded'/>&nbsp;HTML 5</span>
                  <span className="badge border"><SiCss3 className='h5 bg-primary rounded' />&nbsp;CSS</span>
                  <span className="badge border"><TbBrandJavascript className='h5 rounded' style={{backgroundColor:'yellow'}}/>&nbsp;Javascript</span>
