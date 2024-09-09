@@ -82,7 +82,7 @@ export const PortFolio = ()=>{
               </Typography>
               <br />
               <div className="dis-grid">
-              <Button variant="contained"><a className="text-decoration-none text-white" href="https://drive.google.com/file/d/1z7B3bHpuMNOv549UR8kw9Y0fXhbHmjjU/view?usp=sharing">View Resume</a> </Button>
+              <Button variant="contained"><a className="text-decoration-none text-white" href="https://drive.google.com/file/d/1NnI-30SsH9e_XEK_6hLasgTPQDYwNTG3/view?usp=sharing">View Resume</a> </Button>
 
               <Button variant="contained"><a className="text-decoration-none text-white" href="https://drive.google.com/file/d/1EzjNSbQXDEJ_TdQeXL8nqYh-tHfqYADj/view?usp=sharing">Internship Certicate</a> </Button>  
               </div>
